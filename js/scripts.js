@@ -9,4 +9,11 @@ createApp({
     methods: {
 
     },
-}).mount('#app');
+    mounted() {
+      axios
+        .get('https://url.url')
+        .then((response) => => {
+          console.log(this.response.data) 
+        })
+    }}
+).mount('#app');
